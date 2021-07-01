@@ -1,7 +1,11 @@
-
+@font-face {
+    font-family: myFirstFont;
+    src: url(../webfonts/fa-regular-400.woff);
+}
 
 body{
     margin: 0;
+    font-family: myFirstFont;
 }
 
 .loader{
