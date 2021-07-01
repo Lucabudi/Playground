@@ -11,12 +11,13 @@ $(window).scroll(function () {
 });
 
 
-
-
 $(document).ready(function(){
      document.getElementById("defaultOpen").click();
+     var link = window.location.protocol + "//" + window.location.hostname + window.location.pathname;
+     console.log(link)
+     console.log('url')
       $.ajax({
-        url: '../ajax/tab1.json',
+        url:  '/ajax/tab1.json',
         method: 'GET',
         success: function(res) {
           var dati = res;
@@ -29,7 +30,7 @@ $(document).ready(function(){
         }
       });
       $.ajax({
-        url: '../ajax/tab2.json',
+        url: '/ajax/tab2.json',
         method: 'GET',
         success: function(res) {
           var dati = res;
@@ -42,7 +43,7 @@ $(document).ready(function(){
         }
       });
       $.ajax({
-        url: '../ajax/tab3.json',
+        url: '/ajax/tab3.json',
         method: 'GET',
         success: function(res) {
           var dati = res;
