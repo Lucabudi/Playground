@@ -110,13 +110,13 @@ body {
   background-size: cover;
 }
 .slide--1 {
-  background-image: url("/images/slide-hello.jpg");
+  background-image: url("../../images/slide-hello.jpg");
 }
 .slide--2 {
-  background-image: url("/images/slide-circle.jpg");
+  background-image: url("../../images/slide-circle.jpg");
 }
 .slide--3 {
-  background-image: url("/images/slide-play.jpg");
+  background-image: url("../../images/slide-play.jpg");
 }
 
 .grid-content {
@@ -140,13 +140,13 @@ body {
   background-repeat: no-repeat;
 }
 .grid-content__card__header.background.play {
-  background-image: url("/images/card-play-harder.png");
+  background-image: url("../../images/card-play-harder.png");
 }
 .grid-content__card__header.background.simplicity {
-  background-image: url("/images/card-simplicity.png");
+  background-image: url("../../images/card-simplicity.png");
 }
 .grid-content__card__header.background.innovation {
-  background-image: url("/images/card-innovation.png");
+  background-image: url("../../images/card-innovation.png");
 }
 .grid-content__card__body {
   padding: 60px;
@@ -168,13 +168,13 @@ body {
   background-size: cover;
 }
 .banner-grid .banner-image.weare {
-  background-image: url("/images/banner-we-are.jpg");
+  background-image: url("../../images/banner-we-are.jpg");
 }
 .banner-grid .banner-image.wedo {
-  background-image: url("/images/banner-we-do.jpg");
+  background-image: url("../../images/banner-we-do.jpg");
 }
 .banner-grid .banner-image.careers {
-  background-image: url("/images/banner-carrers.jpg");
+  background-image: url("../../images/banner-carrers.jpg");
 }
 .banner-grid .banner-text {
   padding: 20px;

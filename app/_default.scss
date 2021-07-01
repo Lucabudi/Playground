@@ -112,13 +112,13 @@ body{
     background-size: cover;
       
       &--1{
-          background-image: url('/images/slide-hello.jpg');
+          background-image: url('../../images/slide-hello.jpg');
       }
       &--2{
-          background-image: url('/images/slide-circle.jpg');
+          background-image: url('../../images/slide-circle.jpg');
       }
       &--3{
-          background-image: url('/images/slide-play.jpg');
+          background-image: url('../../images/slide-play.jpg');
       }
 }
 
@@ -142,13 +142,13 @@ body{
                 background-repeat: no-repeat;
 
                 &.play{
-                    background-image: url('/images/card-play-harder.png');
+                    background-image: url('../../images/card-play-harder.png');
                 }
                 &.simplicity{
-                    background-image: url('/images/card-simplicity.png');
+                    background-image: url('../../images/card-simplicity.png');
                 }
                 &.innovation{
-                    background-image: url('/images/card-innovation.png');
+                    background-image: url('../../images/card-innovation.png');
                 }
             }
         }
@@ -176,13 +176,13 @@ body{
         
 
         &.weare{
-            background-image: url('/images/banner-we-are.jpg');
+            background-image: url('../../images/banner-we-are.jpg');
         }
         &.wedo{
-            background-image: url('/images/banner-we-do.jpg');
+            background-image: url('../../images/banner-we-do.jpg');
         }
         &.careers{
-            background-image: url('/images/banner-carrers.jpg');
+            background-image: url('../../images/banner-carrers.jpg');
         }
 
     }

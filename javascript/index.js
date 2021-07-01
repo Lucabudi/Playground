@@ -16,7 +16,7 @@ $(window).scroll(function () {
 $(document).ready(function(){
      document.getElementById("defaultOpen").click();
       $.ajax({
-        url: '/ajax/tab1.json',
+        url: '../ajax/tab1.json',
         method: 'GET',
         success: function(res) {
           var dati = res;
@@ -29,7 +29,7 @@ $(document).ready(function(){
         }
       });
       $.ajax({
-        url: '/ajax/tab2.json',
+        url: '../ajax/tab2.json',
         method: 'GET',
         success: function(res) {
           var dati = res;
@@ -42,7 +42,7 @@ $(document).ready(function(){
         }
       });
       $.ajax({
-        url: '/ajax/tab3.json',
+        url: '../ajax/tab3.json',
         method: 'GET',
         success: function(res) {
           var dati = res;
@@ -57,38 +57,6 @@ $(document).ready(function(){
 });
 
 function openTab(evt, tabName) {
-    if (tabName == tabone){
-        $.ajax({
-            url: '/ajax/tab1.json',
-            method: 'GET',
-            success: function(res) {
-              var dati = res;
-              console.log(res)
-              document.getElementById("defaultOpen").innerHTML = dati.item.title
-              document.getElementById("tabonetext").innerHTML = dati.item.content
-            },
-            error: function() {
-              console.log('Si è verificato un errore');
-            }
-        });
-    }
-    if( tabName === tabtwo ){
-        console.log(tabName)
-        $.ajax({
-            url: '/ajax/tab2.json',
-            method: 'GET',
-            success: function(res) {
-              var dati = res;
-              console.log(res)
-              document.getElementById("titletwo").innerHTML = dati.item.title
-              document.getElementById("tabtwotext").innerHTML = dati.item.content
-            },
-            error: function() {
-              console.log('Si è verificato un errore');
-            }
-        });
-    }
-    
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
