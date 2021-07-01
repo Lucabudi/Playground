@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Playground</title>
+        <meta name="description" content="Playground">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="app/css/style.css">
+        <script src="javascript/index.js"></script>
+    </head>
+    <body>
+        <header class="topnav" id="myTopnav">
+            <div class="navigation">
+                <img class="image" src="images/logo-playground-white.png">
+                <div class="nav-link">
+                <a href="#weare" class="link">we are</a>
+                <a href="#wedo" class="link">we do</a>
+                <a href="#careers" class="link">careers</a>
+                <a href="#contactus" class="link">contact us</a>
+                </div>
+            </div>
+        </header>
+        <section class="carousel-content">
+            <div class="background-cover slick">
+                <div class="slide slide--1">
+                    <div></div>
+                </div>
+                <div class="slide slide--2">
+                    <div></div>
+                </div>
+                <div class="slide slide--3">
+                    <div></div>
+                </div>
+            </div>
+            <div class="home-text">
+                <h1>lorem ipsum.</h1>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+        </section>
+        <section  class="container-grid bg-grey">
+            <div class="grid-content">
+                <div class="grid-content__card text-center">
+                    <div class="grid-content__card__header background play">
+                        
+                    </div>
+                    <div class="grid-content__card__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </div>
+                    <div class="grid-content__card__footer">
+                        READ MORE
+                    </div>
+                </div>
+                <div class="grid-content__card text-center">
+                    <div class="grid-content__card__header background simplicity">
+                        
+                    </div>
+                    <div class="grid-content__card__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,  consequat
+                    </div>
+                    <div class="grid-content__card__footer">
+                        READ MORE
+                    </div>
+                </div>
+                <div class="grid-content__card text-center">
+                    <div class="grid-content__card__header background innovation">
+                        
+                    </div>
+                    <div class="grid-content__card__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </div>
+                    <div class="grid-content__card__footer">
+                        READ MORE
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <section class="banner-grid" id="weare">
+            <div class="banner-image weare">
+
+            </div>
+            <div class="banner-text bg-black text-clear">
+                <div>
+                <h2>we <br> are. </h2>
+                <p>consectetur adipiscing elit, <br> sed do eiusmod tempor </p>
+                <a href="/"><button type="button" href="" class="btn btn-primary">THE PLAYERS</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="banner-grid banner-grid__reverse" id="wedo">
+            <div class="banner-text">
+                <div>
+                    <h2>we <br> do. </h2>
+                    <p>consectetur adipiscing elit, <br> sed do eiusmod tempor </p>
+                    <a href="/"><button type="button" href="" class="btn btn-secondary">THE PROJECT</button></a>
+                    </div>
+            </div>
+            <div class="banner-image wedo">
+
+            </div>
+        </section>
+        <section class="banner-grid">
+            <div class="banner-image careers">
+                
+            </div>
+            <div class="banner-text bg-black text-clear" id="careers">
+                <div>
+                    <h2>careers. </h2>
+                    <p>consectetur adipiscing elit, <br> sed do eiusmod tempor </p>
+                    <a href="/"><button type="button" href="" class="btn btn-primary">THE POSITIONS</button></a>
+                    </div>
+            </div>
+        </section>
+        <section class="bg-grey">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'tabone')" id="defaultOpen"></button>
+                <button class="tablinks" onclick="openTab(event, 'tabtwo')" id="titletwo"></button>
+                <button class="tablinks" onclick="openTab(event, 'tabthree')" id="titlethree"></button>
+            </div>
+              
+              <div id="tabone" class="tabcontent">
+                <img src="app/images/loader.png" class="loader">
+                <p id="tabonetext"></p>
+              </div>
+              
+              <div id="tabtwo" class="tabcontent">
+                <img src="app/images/loader.png" class="loader">
+                <p id="tabtwotext"></p>
+              </div>
+              
+              <div id="tabthree" class="tabcontent">
+                <img src="app/images/loader.png" class="loader">
+                <p id="tabthreetext"></p>
+              </div>
+        </section>
+
+
+        <br>
+        <div id="dati"></div>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </body>
+</html>
+
+<script>
+
+    $('.slick').slick({
+        autoplay: false,
+        autoplaySpeed: 2000,
+        fade: true,
+        arrows: true,
+        dots: true
+    });
+
+</script>
+    
