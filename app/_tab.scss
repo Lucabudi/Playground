@@ -6,6 +6,7 @@
     background-color: #f1f1f1;
     width: 30%;
     height: 300px;
+    overflow: scroll;
   }
   
   /* Style the buttons inside the tab */
@@ -30,7 +31,8 @@
   
   /* Create an active/current "tab button" class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
   }
   
   /* Style the tab content */

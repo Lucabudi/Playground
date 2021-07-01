@@ -20,7 +20,7 @@
     <body>
         <header class="topnav" id="myTopnav">
             <div class="navigation">
-                <img class="image" src="images/logo-playground-white.png">
+                <img class="image" src="images/logo-playground-white.png" alt="logo">
                 <div class="nav-link">
                 <a href="#weare" class="link">we are</a>
                 <a href="#wedo" class="link">we do</a>
@@ -53,7 +53,7 @@
                         
                     </div>
                     <div class="grid-content__card__body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                     </div>
                     <div class="grid-content__card__footer">
                         READ MORE
@@ -64,7 +64,7 @@
                         
                     </div>
                     <div class="grid-content__card__body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,  consequat
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  consequat</p>
                     </div>
                     <div class="grid-content__card__footer">
                         READ MORE
@@ -75,7 +75,7 @@
                         
                     </div>
                     <div class="grid-content__card__body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                     </div>
                     <div class="grid-content__card__footer">
                         READ MORE
@@ -91,7 +91,7 @@
                 <div>
                 <h2>we <br> are. </h2>
                 <p>consectetur adipiscing elit, <br> sed do eiusmod tempor </p>
-                <a href="/"><button type="button" href="" class="btn btn-primary">THE PLAYERS</button></a>
+                <a type="button" class="btn btn-primary">THE PLAYERS</a>
                 </div>
             </div>
         </section>
@@ -100,7 +100,7 @@
                 <div>
                     <h2>we <br> do. </h2>
                     <p>consectetur adipiscing elit, <br> sed do eiusmod tempor </p>
-                    <a href="/"><button type="button" href="" class="btn btn-secondary">THE PROJECT</button></a>
+                    <a type="button" class="btn btn-secondary">THE PROJECT</a>
                     </div>
             </div>
             <div class="banner-image wedo">
@@ -115,11 +115,12 @@
                 <div>
                     <h2>careers. </h2>
                     <p>consectetur adipiscing elit, <br> sed do eiusmod tempor </p>
-                    <a href="/"><button type="button" href="" class="btn btn-primary">THE POSITIONS</button></a>
+                    <a type="button" class="btn btn-primary">THE POSITIONS</a>
                     </div>
             </div>
         </section>
         <section class="bg-grey">
+            <div class="margin-section">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'tabone')" id="defaultOpen"></button>
                 <button class="tablinks" onclick="openTab(event, 'tabtwo')" id="titletwo"></button>
@@ -127,25 +128,43 @@
             </div>
               
               <div id="tabone" class="tabcontent">
-                <img src="images/loader.png" class="loader">
+                <img src="images/loader.png" class="loader" alt="loader">
                 <p id="tabonetext"></p>
               </div>
               
               <div id="tabtwo" class="tabcontent">
-                <img src="images/loader.png" class="loader">
+                <img src="images/loader.png" class="loader" alt="loader">
                 <p id="tabtwotext"></p>
               </div>
               
               <div id="tabthree" class="tabcontent">
-                <img src="images/loader.png" class="loader">
+                <img src="images/loader.png" class="loader" alt="loader">
                 <p id="tabthreetext"></p>
               </div>
+            </div>  
         </section>
-
-
-        <br>
-        <div id="dati"></div>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <section class="bg-black container-contact" id="contactus">
+            <div class="text text-clear">
+                <h2>contact<br>us.</h2>
+                <p>Playground srl</p>
+                <p>Via G. Mazzini 3/c</p>
+                <p>Cernusco sul naviglio (Milano)</p>
+                <p>-</p>
+                <p>T +393400000000</p>
+            </div>
+            <div class="form">
+                <form name="contactForm" onsubmit="return validateField()">
+                    <div class="grid-form text-clear">
+                        <input placeholder="name" type="text" id="fname" name="fname">
+                        <input placeholder="last name" type="text" id="lname" name="flname">
+                    </div>
+                    <input placeholder="email" type="email" id="femail" name="femail"><br>
+                    <input placeholder="message" type="text" id="fmessage" name="fmessage"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </body>
 </html>
 

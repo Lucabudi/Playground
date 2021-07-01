@@ -1,6 +1,10 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../webfonts/fa-regular-400.woff);
+}
 
 @import 'default';
-@import 'tab';
+
 
 @media (min-width: 790px) { 
 	@import 'md-up';

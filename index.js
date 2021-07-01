@@ -71,4 +71,11 @@ function openTab(evt, tabName) {
   
   // Get the element with id="defaultOpen" and click on it
   
-  
+  function validateField() {
+    let email = document.forms["contactForm"]["femail"].value;
+    let message = document.forms["contactForm"]["fmessage"].value;
+    if (email == "" || message == "" ) {
+      alert("I campi email e messaggio sono obbligatori");
+      return false;
+    }
+  }
