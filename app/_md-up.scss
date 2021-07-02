@@ -51,15 +51,6 @@ header{
     text-decoration: none;
     font-size: 17px;
 
-    &.active{
-        color: white;
-    }
-
-    &:hover{
-        background-color: #ddd;
-        color: black;
-    }
-
    
   }
 
@@ -103,9 +94,10 @@ header{
     .banner-text{
        h2{
            font-size: 6rem;
-           line-height: 4rem;
+           line-height: 5rem;
            margin: 20px 0;
        }
+      
     }
 }
 

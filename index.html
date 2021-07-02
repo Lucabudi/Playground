@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="it">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
         <meta name="description" content="Playground">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Add the slick-theme.css if you want default styling -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -20,7 +18,7 @@
     <body>
         <header class="topnav" id="myTopnav">
             <div class="navigation">
-                <img class="image" src="images/logo-playground-white.png" alt="logo">
+                <a class="logo-nav" href="/"><img class="image" src="images/logo-playground-white.png" alt="logo"></a>
                 <div class="nav-link">
                 <a href="#weare" class="link">we are</a>
                 <a href="#wedo" class="link">we do</a>
@@ -32,19 +30,25 @@
         <section class="carousel-content">
             <div class="background-cover slick">
                 <div class="slide slide--1">
-                    <div></div>
+                    <div><div class="home-text">
+                        <h1 class="bold">lorem ipsum.</h1>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    </div></div>
                 </div>
                 <div class="slide slide--2">
-                    <div></div>
+                    <div><div class="home-text">
+                        <h1 class="bold">lorem ipsum.</h1>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    </div></div>
                 </div>
                 <div class="slide slide--3">
-                    <div></div>
+                    <div><div class="home-text">
+                        <h1 class="bold">lorem ipsum.</h1>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    </div></div>
                 </div>
             </div>
-            <div class="home-text">
-                <h1>lorem ipsum.</h1>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
+            
         </section>
         <section  class="container-grid bg-grey">
             <div class="grid-content">
@@ -89,22 +93,22 @@
             </div>
             <div class="banner-text bg-black text-clear">
                 <div>
-                <h2>we <br> are. </h2>
+                <h2 class="bold">we <br> are. </h2>
                 <p>consectetur adipiscing elit, <br> sed do eiusmod tempor </p>
-                <a type="button" class="btn btn-primary">THE PLAYERS</a>
+                <a href="/"  class="btn btn-primary">THE PLAYERS</a>
                 </div>
             </div>
         </section>
         <section class="banner-grid banner-grid__reverse" id="wedo">
             <div class="banner-text">
                 <div>
-                    <h2>we <br> do. </h2>
+                    <h2 class="bold">we <br> do. </h2>
                     <p>consectetur adipiscing elit, <br> sed do eiusmod tempor </p>
-                    <a type="button" class="btn btn-secondary">THE PROJECT</a>
+                    <a href="/"  class="btn btn-secondary">THE PROJECT</a>
                     </div>
             </div>
             <div class="banner-image wedo">
-
+                
             </div>
         </section>
         <section class="banner-grid">
@@ -113,9 +117,9 @@
             </div>
             <div class="banner-text bg-black text-clear" id="careers">
                 <div>
-                    <h2>careers. </h2>
+                    <h2 class="bold">careers. </h2>
                     <p>consectetur adipiscing elit, <br> sed do eiusmod tempor </p>
-                    <a type="button" class="btn btn-primary">THE POSITIONS</a>
+                    <a href="/"  class="btn btn-primary">THE POSITIONS</a>
                     </div>
             </div>
         </section>
@@ -164,6 +168,19 @@
                 </form>
             </div>
         </section>
+        <footer class="bg-black footer">
+                <a class="" href="/"><img class="imagfooter" src="images/logo-playground-white.png" alt="logo"></a>
+                <div class="nav-link">
+                <a href="#weare" class="link">we are</a>
+                <a href="#wedo" class="link">we do</a>
+                <a href="#careers" class="link">careers</a>
+                <a href="#contactus" class="link">contact us</a>
+                </div>
+        </footer>
+        <div class="bg-grey policy" id="policy">
+            Our website uses cookies to improve your experience. To find out more about the cookies we use please see our Cookies Policy.
+            <button onclick="coockie('coockieprivacy', true, 365)" class="btn btn-primary">ok</button>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </body>
 </html>

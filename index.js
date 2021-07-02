@@ -12,6 +12,16 @@ $(window).scroll(function () {
 
 
 $(document).ready(function(){
+    
+
+
+    if (document.cookie.indexOf('coockieprivacy') > -1 ) {
+      document.getElementById("policy").style.display="none";
+    }
+    else{
+      document.getElementById("policy").style.display="flex";
+    }
+    
      document.getElementById("defaultOpen").click();
      var link = window.location.protocol + "//" + window.location.hostname;
       $.ajax({
@@ -72,10 +82,21 @@ function openTab(evt, tabName) {
   // Get the element with id="defaultOpen" and click on it
   
   function validateField() {
+    let form = document.forms["contactForm"]
     let email = document.forms["contactForm"]["femail"].value;
     let message = document.forms["contactForm"]["fmessage"].value;
     if (email == "" || message == "" ) {
       alert("I campi email e messaggio sono obbligatori");
       return false;
+    }else{
+      form
     }
+  }
+
+  function coockie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+    document.getElementById("policy").style.display = "none";
   }

@@ -1,6 +1,9 @@
 @font-face {
-  font-family: myFirstFont;
-  src: url(../webfonts/fa-regular-400.woff);
+  font-family: Gotham-Book;
+  src: url("font/Gotham-Book.woff") format("woff"), url("/font/Gotham-Book.woff2") format("woff2"), url("/font/Gotham-Book.svg") format("svg"), url("/font/Gotham-Book.eot"), url("/font/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("/font/Gotham-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
@@ -54,7 +57,11 @@
 
 body {
   margin: 0;
-  font-family: myFirstFont;
+  font-family: "Gotham-Book";
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .loader {
@@ -71,13 +78,19 @@ body {
 }
 
 .btn {
+  text-decoration: none;
+  margin-top: 20px;
   padding: 15px 25px;
   background: transparent;
   cursor: pointer;
 }
 .btn.btn-primary {
   color: #fff;
-  border: 1px solid;
+  border: 1px solid #fff;
+}
+.btn.btn-secondary {
+  color: #1a1a1a;
+  border: 1px solid #000;
 }
 
 .scroll-nav {
@@ -98,7 +111,7 @@ body {
 .topnav a.active {
   color: white;
 }
-.topnav a:hover {
+.topnav a:hover:not(.logo-nav) {
   background-color: #ddd;
   color: black;
 }
@@ -236,6 +249,9 @@ body {
   display: flex;
   align-items: center;
 }
+.banner-grid .banner-text p {
+  margin-bottom: 30px;
+}
 
 .container-contact {
   padding: 100px 0;
@@ -248,6 +264,7 @@ body {
 .container-contact h2 {
   font-size: 6rem;
   margin: 0px;
+  line-height: 5rem;
 }
 .container-contact input {
   width: 100%;
@@ -273,6 +290,43 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.policy {
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.policy .btn {
+  background-color: black;
+  margin: 0 20px;
+  min-width: 100px;
+}
+
+.footer {
+  text-align: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .nav-link {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer .nav-link a {
+  padding: 20px 30px;
+}
+.footer .nav-link img {
+  margin: 20px auto;
 }
 
 @media (min-width: 790px) {
@@ -323,13 +377,6 @@ body {
     text-decoration: none;
     font-size: 17px;
   }
-  .topnav a.active {
-    color: white;
-  }
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
 
   .home-text {
     top: 300px;
@@ -364,7 +411,7 @@ body {
   }
   .banner-grid .banner-text h2 {
     font-size: 6rem;
-    line-height: 4rem;
+    line-height: 5rem;
     margin: 20px 0;
   }
 
@@ -426,10 +473,19 @@ body {
     display: flex;
     flex-direction: column-reverse;
   }
+  .banner-grid__reverse .banner-text {
+    background-color: black;
+    color: #fff;
+  }
+  .banner-grid__reverse .banner-text .btn-secondary {
+    border: 1px solid #fff;
+    color: #fff;
+  }
   .banner-grid .banner-text {
     padding: 20px;
     display: flex;
     align-items: center;
+    height: 300px;
   }
 
   .tab {
@@ -445,5 +501,9 @@ body {
 
   .container-contact {
     text-align: center;
+  }
+
+  .footer .nav-link a {
+    padding: 20px 15px;
   }
 }/*# sourceMappingURL=style.css.map */

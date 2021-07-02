@@ -1,7 +1,18 @@
 @font-face {
-    font-family: myFirstFont;
-    src: url(../webfonts/fa-regular-400.woff);
+    font-family: Gotham-Book;
+    src:url('font/Gotham-Book.woff') format('woff'),
+        url('/font/Gotham-Book.woff2') format('woff2'),
+        url('/font/Gotham-Book.svg') format('svg'),
+        url('/font/Gotham-Book.eot'),
+        url('/font/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('/font/Gotham-Book.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+
 
 @import 'default';
 
